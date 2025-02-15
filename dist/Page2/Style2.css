@@ -1,0 +1,126 @@
+* {
+    margin: 0px 0px;
+    padding: 0;
+    box-sizing: border-box;
+    background-image:url(Background.png);
+    }
+    
+ .container {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: 100vh;
+    margin: auto;
+    }
+
+.title {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #707070;
+    text-align:left;
+    text-indent: 50px;
+    }
+    
+.p {
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #707070;
+    text-align: left;
+    text-indent: 50px;
+ }
+
+ .p1 {
+    font-size: 18px;
+    color: #C60C0C;
+    margin-top: 50px;
+    margin-bottom: 1px;
+    text-align: center;
+    word-spacing: 30px;
+    letter-spacing: 10px;
+    line-height: 1.8em;
+    }
+
+.p2 {
+    font-size: 18px;
+    color: #C60C0C;
+    margin-top: 0px;
+    margin-bottom: -30px;
+    text-align: center;
+    word-spacing: -10px;
+    letter-spacing: 10;
+    text-decoration: none;
+    }
+
+.p2b {
+    font-size: 18px;
+    color: #C60C0C;
+    margin-top: 0px;
+    margin-bottom: -30px;
+    text-align: center;
+    word-spacing: -10px;
+    letter-spacing: 10;
+    text-decoration: none;
+    font-weight: bold;
+    }
+
+.p3 {
+    font-size: 18px;
+    color: #C60C0C;
+    margin-top: 30px;
+    margin-bottom: -30px;
+    Text-align: center;
+    word-spacing: -10px;
+    letter-spacing: 10;
+    }
+
+.p3b {
+    font-size: 18px;
+    color: #C60C0C;
+    margin-top: 30px;
+    margin-bottom: -30px;
+    Text-align: center;
+    word-spacing: -10px;
+    letter-spacing: 10;
+    font-weight: bold;
+    }   
+
+.p4 {
+    font-size: 18px;
+    color: #C60C0C;
+    margin-top: 30px;
+    margin-bottom: -50px;
+    text-align: center;
+    word-spacing: -10px;
+    letter-spacing: 10;
+    }
+
+.p4b {
+    font-size: 18px;
+    color: #C60C0C;
+    margin-top: 30px;
+    margin-bottom: -30px;
+    text-align: center;
+    word-spacing: -10px;
+    letter-spacing: 10;
+    font-weight: bold;
+    }
+
+i {
+    font-style: normal;
+    }
+
+.button {
+    background-color: white;
+    color: #707070;
+    border: 1px solid #707070;
+    padding: 0px 12px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    margin: 15px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    text-decoration: none;
+    }
+
+

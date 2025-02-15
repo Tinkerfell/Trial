@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/page2/Style2.css" />
+<body>
+    <main class="container">
+        <h1 class="title">Hi there, </h1>
+        <p class="p">Find all the words to make a complete sentence.</p>
+ 
+        <div class="p1">
+            <p>USKG THEP</p>
+        <div>
+
+        <div class="p2">
+                <span>S</span>
+                <span><i onclick="myFunction(this)" class="p2">WILL</i></span>
+                <span>BQTRUSBO</span>                
+        </div>
+
+        <div class="p3">
+            <span>AWQ</span>
+            <span><i onclick="myFunction(this)" class="p3">YOU</i></span>
+            <span>MGHLYSH</span>                
+        </div>
+
+        <div class="p3">
+            <span>TRPGU</span>
+            <span><i onclick="myFunction(this)" class="p3">BE</i></span>
+            <span>SHKPLKO</span>                
+        </div>
+
+        <div class="p3">
+            <span>NULBUJ</span>
+            <span><i onclick="myFunction(this)" class="p3">MY</i></span>
+            <span>EINEL</span>                
+        </div>
+
+        <div class="p3">
+            <span>O</span>
+            <span><i onclick="myFunction(this)" class="p3">VALENTINE</i></span>
+            <span>TP</span>                
+        </div>
+
+        <div class="p4">
+            <span>SNIT</span>
+            <span><i onclick="myFunction(this)" class="p4">BABY?</i></span>
+            <span>U</span>                
+        </div>
+
+        <div class="p1">
+            <p>TDHGGVA</p>
+            <p>LENTIN</p>
+            <p>EGH</p>
+            <p>G</p>
+        <div>
+        
+        <a href="/page3/Index.html" class="button">NEXT</a>
+
+     <script>
+        function myFunction(x) {
+            x.classList.toggle("p2b");
+            x.classList.toggle("p3b");
+            x.classList.toggle("p4b");
+         }
+    
+        let words = ["WILL", "YOU", "BE", "MY", "VALENTINE", "BABY?"];
+        let clickedWords = [];
+
+        function myFunction(x) {
+            x.classList.toggle("p2b");
+            x.classList.toggle("p3b");
+            x.classList.toggle("p4b");
+
+            let word = x.innerText;
+            if (clickedWords.includes(word)) {
+            clickedWords = clickedWords.filter(item => item !== word);
+            } else {
+            clickedWords.push(word);
+            }
+
+            if (words.every(word => clickedWords.includes(word))) {
+            document.querySelector(".button").style.pointerEvents = "auto";
+            document.querySelector(".button").style.opacity = 1;
+            } else {
+            document.querySelector(".button").style.pointerEvents = "none";
+            document.querySelector(".button").style.opacity = 0.5;
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelector(".button").style.pointerEvents = "none";
+            document.querySelector(".button").style.opacity = 0.5;
+        });
+    </script>  
+    </main>
+
+</body>
+</html>
